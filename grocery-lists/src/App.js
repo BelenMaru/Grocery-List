@@ -4,11 +4,14 @@ import Alert from "./Alert";
 
 function App() {
    const [list, setList] = useState("");
-    const [alert, setAlert] = useState({});
+    const [alert, setAlert] = useState({show:false, msg: '', type:''});
   return (
-    <div className="App">
-      <h2>Grocery Lists</h2>
+    <section className="section-center">
+    <div className = "grocery-container">
+    <List/>
+
     </div>
+     </section>
   );
 }
 
