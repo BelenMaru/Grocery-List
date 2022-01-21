@@ -16,6 +16,16 @@ function App() {
     <section className="section-center">
       <form className="grocery-form" onSubmit={handleSubmit}>
         {alert.show && <Alert />}
+        <h3>grocery list</h3>
+        <div className="form-control">
+          <input
+            type="text"
+            className="grocery"
+            placeholder="e.g. eggs"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
       </form>
       <div className="grocery-container">
         <List />
