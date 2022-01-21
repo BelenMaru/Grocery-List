@@ -10,11 +10,12 @@ function App() {
     const [alert, setAlert] = useState({show:false, msg: '', type:''});
   return (
     <section className="section-center">
-    <div className = "grocery-container">
-    <List/>
-
-    </div>
-     </section>
+      <form className="grocery-form" onSubmit={handleSubmit}></form>
+      <div className="grocery-container">
+        <List />
+        <button className="clear-btn">clear items</button>
+      </div>
+    </section>
   );
 }
 
