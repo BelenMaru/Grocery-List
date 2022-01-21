@@ -111,3 +111,12 @@ p {
 .section-center:hover {
   box-shadow: var(--dark-shadow);
 }
+
+.grocery-container {
+  margin-top: 2rem;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+}
