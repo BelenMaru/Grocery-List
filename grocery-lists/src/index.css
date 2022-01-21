@@ -95,3 +95,19 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
+
+/* section */
+
+.section {
+  padding : 5rem 0;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin-top: 8rem;
+}
+
+.section-center:hover {
+  box-shadow: var(--dark-shadow);
+}
