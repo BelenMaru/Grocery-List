@@ -1,5 +1,5 @@
 import React from "react";
-
+import {FaEdit} from "react-icons/fa";
 const List = ({ items }) => {
   return (
     <div className="grocery-list">
@@ -7,14 +7,14 @@ const List = ({ items }) => {
         const { id, title } = item;
         return (
           <article key={id} className="grocery-item">
-          <p className="title">{title}</p>
-          <div className="btn-container">
-
-  </div>
- </article>
-    
-  
-  );
+            <p className="title">{title}</p>
+            <div className="btn-container">
+              <button type="button" className="edit-btn">
+                <FaEdit />
+              </button>
+            </div>
+          </article>
+        );
   })}
   </div>
  );
