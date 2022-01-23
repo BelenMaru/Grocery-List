@@ -16,10 +16,11 @@ function App() {
     e.preventdefault();
     if(!name) {
       // display alert
-      setAlert({ 
-        show: true,
-         msg: "please enter value", 
-         type: "danger" });
+      // setAlert({ 
+      //   show: true,
+      //    msg: "please enter value", 
+      //    type: "danger" });
+      showAlert(true,"danger", "please enter value")
     }
     else if(name && isEditing) {
       // deal with edit
@@ -32,6 +33,10 @@ function App() {
 
     }
   };
+   const showAlert = (show = false, type = "", msg = "") => {
+     setAlert({ show, type, msg });
+   };
+  
   return (
     <section className="section-center">
       <form className="grocery-form" onSubmit={handleSubmit}>
