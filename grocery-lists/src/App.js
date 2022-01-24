@@ -27,6 +27,7 @@ function App() {
     }
     else {
       // show alert
+      showAlert(true, "success", "item added to the list");
       const newItem = { id: new Date().getTime().toString(), title: name };
       setList([...list, newItem]);
       setName("");
@@ -36,6 +37,10 @@ function App() {
    const showAlert = (show = false, type = "", msg = "") => {
      setAlert({ show, type, msg });
    };
+    const clearList = () => {
+      showAlert(true, "danger", "empty list");
+    };
+  
   
   return (
     <section className="section-center">
