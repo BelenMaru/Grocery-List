@@ -168,3 +168,11 @@ p {
   border-radius: var(--radius);
   text-transform: capitalize;
 }
+
+.grocery-item:hover {
+  color: var(--clr-grey-5);
+  background: var(--clr-grey-10);
+}
+.grocery-item:hover .title {
+  color: var(--clr-grey-5);
+}
