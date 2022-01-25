@@ -32,6 +32,10 @@ function App() {
           return item;
         })
       );
+      setName("");
+      setEditID(null);
+      setIsEditing(false);
+      showAlert(true, "success", "value changed");
     }else {
       // show alert
       showAlert(true, "success", "item added to the list");
