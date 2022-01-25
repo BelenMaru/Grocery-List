@@ -64,6 +64,9 @@ function App() {
     setEditID(id);
     setName(specificItem.title);
   };
+  useEffect(() => {
+    localStorage.setitem("list", JSON.stringify(list));
+  }, [list]);
   return (
     <section className="section-center">
       <form className="grocery-form" onSubmit={handleSubmit}>
