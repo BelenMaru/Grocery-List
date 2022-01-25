@@ -24,8 +24,15 @@ function App() {
     }
     else if(name && isEditing) {
       // deal with edit
-    }
-    else {
+      setList(
+        list.map((item) => {
+          if (item.id === editID) {
+            return { ...item, title: name };
+          }
+          return item;
+        })
+      );
+    }else {
       // show alert
       showAlert(true, "success", "item added to the list");
       const newItem = { id: new Date().getTime().toString(), title: name };
