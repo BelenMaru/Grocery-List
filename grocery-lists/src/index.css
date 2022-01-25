@@ -193,3 +193,9 @@ p {
   transition: var(--transition);
   margin-top: 1.25rem;
 }
+.edit-btn {
+  color: var(--clr-green-light);
+}
+.edit-btn:hover {
+  color: var(--clr-green-dark);
+}

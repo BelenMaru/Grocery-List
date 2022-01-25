@@ -4,6 +4,7 @@ import Alert from "./Alert";
 
 const getLocalStorage =() => {
   let list = localStorage.getItem("list");
+}
 function App() {
   const [name, setName] = useState("");
   const [list, setList] = useState("");
